@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/Users/kentliu/IdeaProjects/buenas-tardes/public/vite.svg'
 import './App.css'
 import { spanishLessons } from "./constants/index.js";
 
