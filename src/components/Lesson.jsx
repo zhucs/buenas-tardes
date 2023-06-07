@@ -3,7 +3,7 @@ import { spanishLessons } from "../constants/index.js";
 
 import { BrowserRouter } from "react-router-dom";
 
-const Lessons = () => {
+const Lesson = () => {
     const getGreeting = () => {
         const currentTime = new Date().getHours();
         let greeting = '';
@@ -42,4 +42,4 @@ const Lessons = () => {
     );
 }
 
-export default Lessons;
+export default Lesson;
