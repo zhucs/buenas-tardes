@@ -10,7 +10,7 @@ import Lessons from "./components/Lessons.jsx";
 const App = () => {
     return (
         <BrowserRouter>
-            <div className='relative z-0'>
+            <div className=''>
                 <Lessons/>
             </div>
         </BrowserRouter>
