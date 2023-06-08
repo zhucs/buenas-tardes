@@ -21,7 +21,7 @@ const Lesson = () => {
     return (
         <div className={`bg-cover bg-no-repeat bg-blue-500`}>
             <div>
-                <div className={``}>
+                <div className={`flex justify-center items-center`}>
                     <h3 className={`text-right font-semibold text-3xl animate-bounce`}>{getGreeting()}</h3>
                 </div>
                 <div className={`w-full`}>
