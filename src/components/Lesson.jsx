@@ -22,7 +22,7 @@ const Lesson = () => {
         <div className={`bg-cover bg-no-repeat bg-blue-500`}>
             <div>
                 <div className={``}>
-                    <h3 className={`text-center font-semibold text-3xl animate-bounce`}>{getGreeting()}</h3>
+                    <h3 className={`text-right font-semibold text-3xl animate-bounce`}>{getGreeting()}</h3>
                 </div>
                 <div className={`w-full`}>
                     <ul className={`grid-cols-1 gap-4 sm:grid-cols-1 mt-20`}>

@@ -7,11 +7,11 @@ import SideBarMenu from "./components/SideBarMenu.jsx";
 const App = () => {
     return (
         <BrowserRouter>
-            <div className='flex'>
-                <div className={`bg-blue-300 w-64 h-screen`}>
+            <div className='flex w-screen h-screen'>
+                <div className={`bg-blue-300 w-1/4 h-screen`}>
                     <SideBarMenu/>
                 </div>
-                <div className={`flex-grow`}>
+                <div className={`flex-grow w-3/4 bg-amber-50 h-screen`}>
                     <Lesson/>
                 </div>
             </div>
