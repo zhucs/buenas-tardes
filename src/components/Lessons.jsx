@@ -1,9 +1,7 @@
 import '../App.css'
-import { spanishLessons } from "../constants/index.js";
+import {spanishLessons} from "../constants/index.js";
 
-import { BrowserRouter } from "react-router-dom";
-
-const Lesson = () => {
+const Lessons = () => {
     const getGreeting = () => {
         const currentTime = new Date().getHours();
         let greeting = '';
@@ -42,4 +40,4 @@ const Lesson = () => {
     );
 }
 
-export default Lesson;
+export default Lessons;

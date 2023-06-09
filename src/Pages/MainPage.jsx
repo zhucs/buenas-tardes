@@ -1,6 +1,6 @@
 import '../App.css'
 import SideBarMenu from "../components/SideBarMenu.jsx";
-import Lesson from "../components/Lesson.jsx";
+import Lessons from "../components/Lessons.jsx";
 
 const MainPage = () => {
 
@@ -10,7 +10,7 @@ const MainPage = () => {
                 <SideBarMenu/>
             </div>
             <div className={`flex-grow bg-amber-50 h-full`}>
-                <Lesson/>
+                <Lessons/>
             </div>
         </div>
     );
