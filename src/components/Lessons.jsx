@@ -7,27 +7,27 @@ const Lessons = () => {
         let greeting = '';
 
         if (currentTime >= 5 && currentTime <= 12) {
-            greeting = 'Buenos Días';
+            greeting = 'Buenos Días!';
         } else if (currentTime >= 12 && currentTime < 19) {
-            greeting = 'Buenas Tardes';
+            greeting = 'Buenas Tardes!';
         } else {
-            greeting = 'Buenas Noches';
+            greeting = 'Buenas Noches!';
         }
         return greeting;
     };
 
     return (
-        <div className={`bg-cover bg-no-repeat bg-blue-500`}>
+        <div className={`bg-cover bg-no-repeat bg-white h-full`}>
             <div>
                 <div className={`flex justify-center items-center`}>
-                    <h3 className={`text-right font-semibold text-3xl animate-bounce`}>{getGreeting()}</h3>
+                    <h3 className={`mt-8 text-black font-semibold lg:text-5xl text-4xl animate-none`}>{getGreeting()}</h3>
                 </div>
-                <div className={`w-full`}>
-                    <ul className={`grid-cols-1 gap-4 sm:grid-cols-1 mt-20`}>
+                <div className={`flex justify-center items-center`}>
+                    <ul className={`mt-12 w-11/12`}>
                         {spanishLessons.map((spanishLesson) => (
                             <li key={spanishLessons.id}
                                 className=
-                                    {`text-center cursor-pointer bg-gray-800 m-4 rounded-lg 
+                                    {`text-center cursor-pointer h-24 bg-indigo-300 m-8 rounded-lg 
                                 transition-transform hover:scale-105 text-white text-xl`}
                             >
                                 {spanishLesson.title}

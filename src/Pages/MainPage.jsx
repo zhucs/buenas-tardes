@@ -6,7 +6,7 @@ const MainPage = () => {
 
     return (
         <div className='flex w-screen h-screen overflow-hidden'>
-            <div className={`bg-blue-300 h-full`}>
+            <div className={`h-full`}>
                 <SideBarMenu/>
             </div>
             <div className={`flex-grow bg-amber-50 h-full`}>
