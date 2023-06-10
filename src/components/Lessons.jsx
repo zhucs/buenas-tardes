@@ -34,7 +34,7 @@ const Lessons = () => {
         <div className={`bg-cover bg-no-repeat bg-white h-full`}>
             <div>
                 <div className={`flex justify-center items-center`}>
-                    <h3 className={`mt-8 text-black font-semibold lg:text-5xl text-4xl animate-none`}>
+                    <h3 className={`mt-8 text-black font-semibold lg:text-5xl text-4xl animate-bounce`}>
                         {displayedGreeting}</h3>
                 </div>
                 <div className={`flex justify-center items-center`}>
