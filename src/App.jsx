@@ -2,9 +2,8 @@ import './App.css'
 
 import {BrowserRouter} from "react-router-dom";
 import {useState} from "react";
-
-import MainPage from "./Pages/MainPage.jsx";
 import {LanguageContext} from "./constants/LanguageContext.jsx";
+import LoginPage from "./Pages/LoginPage.jsx";
 
 const App = () => {
     // Language that the user is currently learning
@@ -16,7 +15,9 @@ const App = () => {
     return (
         <BrowserRouter>
             <LanguageContext.Provider value={{language: language, updateLanguage: updateLanguage}}>
-                <MainPage/>
+                <div className={`w-screen`}>
+                    <LoginPage/>
+                </div>
             </LanguageContext.Provider>
 
         </BrowserRouter>
