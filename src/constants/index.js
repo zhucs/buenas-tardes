@@ -11,6 +11,14 @@ const spanishLessons = [
         id: 3,
         title: "Lesson 3",
     },
+    {
+        id: 4,
+        title: "Lesson 4",
+    },
+    {
+        id: 5,
+        title: "Lesson 5",
+    },
 ];
 
 const sidebarItems = [
