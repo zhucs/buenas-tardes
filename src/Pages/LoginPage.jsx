@@ -5,7 +5,7 @@ const LoginPage = () => {
 
     return (
         <div className={`flex w-full h-screen`}>
-            <div className={`flex w-full items-center justify-center lg:w-1/2`}>
+            <div className={`flex w-full h-screen items-center justify-center lg:w-1/2`}>
                 <LoginForm/>
             </div>
             <div className={`hidden relative lg:flex h-full items-center justify-center bg-gray-200 w-1/2`}>
