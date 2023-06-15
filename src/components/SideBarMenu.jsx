@@ -9,7 +9,7 @@ const SideBarMenu = () => {
     const[open, setOpen] = useState(true);
 
     return (
-        <div className="flex">
+        <div className="flex h-screen">
             <div className={` ${open ? "w-56" : "w-0"} bg-indigo-300 h-screen relative duration-300`}>
                 <img
                     src="../../public/control.png"
