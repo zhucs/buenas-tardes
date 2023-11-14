@@ -1,19 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/Users/kentliu/IdeaProjects/buenas-tardes/public/vite.svg'
 import './App.css'
-import { spanishLessons } from "./constants/index.js";
-
-import { BrowserRouter } from "react-router-dom";
-import Lessons from "./components/Lessons.jsx";
+import {useState} from "react";
+import {LanguageContext} from "./constants/LanguageContext.jsx";
+// mport MainPage from "./Pages/MainPage.jsx";
+import LessonPage from "./Pages/LessonPage.jsx";
 
 const App = () => {
+    // Language that the user is currently learning
+    const [language, setLanguage] = useState("Spanish");
+    const updateLanguage = (newLang) => {
+        setLanguage(newLang);
+    }
+
     return (
-        <BrowserRouter>
-            <div className='relative z-0'>
-                <Lessons/>
+        <LanguageContext.Provider value={{language: language, updateLanguage: updateLanguage}}>
+            <div className={`w-screen`}>
+                <LessonPage/>
             </div>
-        </BrowserRouter>
+        </LanguageContext.Provider>
+
     );
 }
 

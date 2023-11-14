@@ -43,12 +43,6 @@
   );
 }
 
-.green-pink-gradient {
-  background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-}
-
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -145,6 +139,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: #f1f1f1;
+  font-family: -apple-system, sans-serif;
+}
+
+html {
+  display: flex;
 }
 
 h1 {
@@ -159,7 +159,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #f1f1f1;
   cursor: pointer;
   transition: border-color 0.25s;
 }
